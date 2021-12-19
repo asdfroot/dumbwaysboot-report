@@ -42,10 +42,6 @@
 
     ![gambar 8](assets/new.png)
 
--   Setelah di `Create` maka sudah selesai melakukan pembuatan virtual mesin, selanjutnya klik `settings` untuk melakukan konfigurasi lainnya.
-
-    ![gambar 8](assets/new.png)
-
 -   Pada **tab system** tentukan core prosesor yang akan digunakan dalam virtual mesin ini. Secara default mesin virtual hanya menggunakan **1 core**.  sebenarnya bisa optional karna untuk belajar jadi menggunakan 1 core sudah cukup.
 
     ![gambar 9](assets/1cpu.png)
