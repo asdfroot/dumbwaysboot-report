@@ -166,7 +166,7 @@
 
 -   Setelah itu lakukan perintah `exec bash`, lalu cek versi yang sudah terinstal dengan printah `nvm -v`
 
-     ![gambar 43](assets/21execnvm.png)
+     ![gambar 43](assets/21execnvm-v.png)
 
 -   Untuk menginstal nodejs lakukan perintah `nvm install 14`
 
@@ -174,7 +174,7 @@
 
 -   Cek versi menggunakan perintah `node -v` Untuk mengecek npm gunakan perintah `npm -v`
 
-     ![gambar 45](assets/23nodenpm.png)
+     ![gambar 45](assets/23nodenpm-v.png)
 
 -   Ketika sudah mengclone aplikasi maka pindah pada directory `cd dumbflix-frontend`
 
