@@ -105,7 +105,7 @@
 
 -   Pada **Add Storage** sudah secara default memiliki 8Gb, sesuaikan dengan kebutuhan jika sudah klik `Next: Add Tags`
 
-     ![gambar 27](assets/5torage.png)
+     ![gambar 27](assets/5storage.png)
 -   Pada **Add Tags** bisa dilewati saja atau klik `Next: Configure Security Group`
 
      ![gambar 28](assets/6tags.png)
