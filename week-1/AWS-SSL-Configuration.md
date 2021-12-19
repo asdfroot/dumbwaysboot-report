@@ -1,6 +1,4 @@
-# AWS Reverse-Proxy
-
-## Install free SSL certificate for web server with let's encrypt
+# Install free SSL certificate for web server with let's encrypt
 
 -   Masuk **cloudflare** terlebih dahulu.
 
