@@ -50,7 +50,7 @@
 
 -   Pada **Select an existing key pair or create a new key pair** private key yang digunakan untuk login SSH. Masukkan key pair name yang ingin dibuat, dan **Download** Key Pair untuk remot nanti, jika sudah klik `Launch instances`
 
-    ![gambar 13](assets/reviewinstancelaunch.png)
+    ![gambar 13](assets/keypair.png)
 
 -   Pada **Launch Status** jika **Your instances are now launching** instance berhasil dibuat. klik `View Instances`
 
