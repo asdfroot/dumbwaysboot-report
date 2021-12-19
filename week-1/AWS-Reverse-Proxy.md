@@ -34,7 +34,7 @@
 
     ![gambar 8](assets/9nanonginxconf.png)
 
-    ![gambar 9](assets/10isiconfngix.png)
+    ![gambar 9](assets/10isiconfnginx.png)
 
 -   Cek syntax nginx `sudo nginx -t`
 
