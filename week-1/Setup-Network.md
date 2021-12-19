@@ -4,7 +4,7 @@
 
 -   Buka mesin virtual (VirtualBox) arahkan pada Server yang ingin dirubah tipe jaringannya lalu klik `Setting`
 
-    ![gambar 1](assets/setting.png)
+    ![gambar 1](assets/0setting.png)
 
 -   Setelah masuk pada tab **Network** jika ingin mengganti tipe jaringan maka klik pada bagian **Attached to:** rubah yang semula tipe jaringannya **NAT** menjadi **Bridge Adapter** kemudian `OK`
 
