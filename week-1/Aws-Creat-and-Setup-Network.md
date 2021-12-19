@@ -87,138 +87,137 @@
 
 ## Server untuk Aplikasi
 
-  -   Selanjutnya membuat server untuk aplikasi, klik `Launch Instances`.
+-   Selanjutnya membuat server untuk aplikasi, klik `Launch Instances`.
 
-      ![gambar 23](assets/1launch.png)
+     ![gambar 23](assets/1launch.png)
 
-  -   Pada kolom pencarian ketik `ubuntu`, ketika muncul pilih **Server 20.04 LTS 64-bit x86** dan klik `Select`
+-   Pada kolom pencarian ketik `ubuntu`, ketika muncul pilih **Server 20.04 LTS 64-bit x86** dan klik `Select`
 
-      ![gambar 24](assets/2cariubuntu.png)    
+     ![gambar 24](assets/2cariubuntu.png)    
 
-  -   Pada **Choose an Instance Type** pilih **t2.micro** dan klik `Next: Configure Instance Details`
+-   Pada **Choose an Instance Type** pilih **t2.micro** dan klik `Next: Configure Instance Details`
 
-      ![gambar 25](assets/3t2micro.png)    
+     ![gambar 25](assets/3t2micro.png)    
 
-    -   Pada **Configure Instance Details** isi `1` pada **Number of Instances** lalu `Disable` pada **Auto-assign Public IP** dan klik `Next: Add Storage`
+ -   Pada **Configure Instance Details** isi `1` pada **Number of Instances** lalu `Disable` pada **Auto-assign Public IP** dan klik `Next: Add Storage`
 
-        ![gambar 26](assets/4number.png)
+     ![gambar 26](assets/4number.png)
 
-    -   Pada **Add Storage** sudah secara default memiliki 8Gb, sesuaikan dengan kebutuhan jika sudah klik `Next: Add Tags`
+-   Pada **Add Storage** sudah secara default memiliki 8Gb, sesuaikan dengan kebutuhan jika sudah klik `Next: Add Tags`
 
-        ![gambar 27](assets/5torage.png)
+     ![gambar 27](assets/5torage.png)
+-   Pada **Add Tags** bisa dilewati saja atau klik `Next: Configure Security Group`
 
-    -   Pada **Add Tags** bisa dilewati saja atau klik `Next: Configure Security Group`
+     ![gambar 28](assets/6tags.png)
 
-        ![gambar 28](assets/6tags.png)
+-   Pada **Configure Security Group** Ijinkan protokol yang ingin dibuka ke publik, tetapi ini akan membuka pada **All traffic**. Jika sudah klik `Review and Launch`
 
-    -   Pada **Configure Security Group** Ijinkan protokol yang ingin dibuka ke publik, tetapi ini akan membuka pada **All traffic**. Jika sudah klik `Review and Launch`
+     ![gambar 29](assets/7alltrafic.png)
 
-        ![gambar 29](assets/7alltrafic.png)
+-   Pada **Review Instance Launch** jika tidak ada yang mau dirubah klik `Launch`
 
-    -   Pada **Review Instance Launch** jika tidak ada yang mau dirubah klik `Launch`
+     ![gambar 30](assets/8review.png)
 
-        ![gambar 30](assets/8review.png)
+-   Pada **Select an existing key pair or create a new key pair** untuk kali ini akan menggunakan key pair yang sudah pernah dibuat dan didownload, langsung `Launch instances`
 
-    -   Pada **Select an existing key pair or create a new key pair** untuk kali ini akan menggunakan key pair yang sudah pernah dibuat dan didownload, langsung `Launch instances`
+     ![gambar 31](assets/9key.png)
 
-        ![gambar 31](assets/9key.png)
+-   Pada **Launch Status** jika **Your instances are now launching** instance berhasil dibuat. klik `View Instances`
 
-    -   Pada **Launch Status** jika **Your instances are now launching** instance berhasil dibuat. klik `View Instances`
+     ![gambar 32](assets/10launchstatus.png)
 
-        ![gambar 32](assets/10launchstatus.png)
+-   Cek **instances** jika server berhasil dibuat.
 
-    -   Cek **instances** jika server berhasil dibuat.
+     ![gambar 33](assets/11gantinama.png)
 
-        ![gambar 33](assets/11gantinama.png)
+-   Buka fitur `Elastic IPs` untuk atur ip static, lalu `Allocated Elastic IP address` dan klik `Allocate` .
 
-    -   Buka fitur `Elastic IPs` untuk atur ip static, lalu `Allocated Elastic IP address` dan klik `Allocate` .
+     ![gambar 34](assets/12elasticip.png)
 
-        ![gambar 34](assets/12elasticip.png)
+     ![gambar 35](assets/13allocate.png)
 
-        ![gambar 35](assets/13allocate.png)
+-   Selanjutnya klik `Actions` lalu pilih `Associate Elastic IP address`.
 
-    -   Selanjutnya klik `Actions` lalu pilih `Associate Elastic IP address`.
+     ![gambar 36](assets/14actionassociate.png)
 
-        ![gambar 36](assets/14actionassociate.png)
+-   Pada **Associate Elastic IP address** pilih server aplikasi yang telah dibuat, lalu klik `Allocate`.
 
-    -   Pada **Associate Elastic IP address** pilih server aplikasi yang telah dibuat, lalu klik `Allocate`.
+     ![gambar 37](assets/15pilihserver.png)
 
-        ![gambar 37](assets/15pilihserver.png)
+-   Cek **instances** jika server aplikasi berhasil dibuat.
 
-    -   Cek **instances** jika server aplikasi berhasil dibuat.
+     ![gambar 38](assets/16cek.png)
 
-        ![gambar 38](assets/16cek.png)
+-   Selanjutnya buka directory yang terdapat key pair, lalu lakukan perintah remote `sudo ssh -i helloaws.pem ubuntu@3.223.87.14` jika terjadi **Permission denied (publickey)** maka lakukan perintah `sudo chmod 400 helloaws.pem`, selanjutnya **ulangi** perintah remote.
 
-    -   Selanjutnya buka directory yang terdapat key pair, lalu lakukan perintah remote `sudo ssh -i helloaws.pem ubuntu@3.223.87.14` jika terjadi **Permission denied (publickey)** maka lakukan perintah `sudo chmod 400 helloaws.pem`, selanjutnya **ulangi** perintah remote.
+     ![gambar 39](assets/17remot.png)
 
-        ![gambar 39](assets/17remot.png)
+-   Ketika sudah berhasil meremote server maka hal pertama yang harus dilakukan adalah `sudo apt update && sudo apt upgrade -y`.
 
-    -   Ketika sudah berhasil meremote server maka hal pertama yang harus dilakukan adalah `sudo apt update && sudo apt upgrade -y`.
+     ![gambar 40](assets/18updateupgrade.png)    
 
-        ![gambar 40](assets/18updateupgrade.png)    
+-   Lakukan perintah `git clone https://github.com/sgnd/dumbflix-frontend` yaitu untuk mendapatkan aplikasi yang akan dideploy
 
-    -   Lakukan perintah `git clone https://github.com/sgnd/dumbflix-frontend` yaitu untuk mendapatkan aplikasi yang akan dideploy
+     ![gambar 41](assets/19gitclone.png)
 
-        ![gambar 41](assets/19gitclone.png)
+-   Lalu instal node.js 14.x `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash`
 
-    -   Lalu instal node.js 14.x `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash`
+     ![gambar 42](assets/20curl.png)
 
-        ![gambar 42](assets/20curl.png)
+-   Setelah itu lakukan perintah `exec bash`, lalu cek versi yang sudah terinstal dengan printah `nvm -v`
 
-    -   Setelah itu lakukan perintah `exec bash`, lalu cek versi yang sudah terinstal dengan printah `nvm -v`
+     ![gambar 43](assets/21execnvm.png)
 
-        ![gambar 43](assets/21execnvm.png)
+-   Untuk menginstal nodejs lakukan perintah `nvm install 14`
 
-    -   Untuk menginstal nodejs lakukan perintah `nvm install 14`
+     ![gambar 44](assets/22nvminstall14.png)
 
-        ![gambar 44](assets/22nvminstall14.png)
+-   Cek versi menggunakan perintah `node -v` Untuk mengecek npm gunakan perintah `npm -v`
 
-    -   Cek versi menggunakan perintah `node -v` Untuk mengecek npm gunakan perintah `npm -v`
+     ![gambar 45](assets/23nodenpm.png)
 
-        ![gambar 45](assets/23nodenpm.png)
+-   Ketika sudah mengclone aplikasi maka pindah pada directory `cd dumbflix-frontend`
 
-    -   Ketika sudah mengclone aplikasi maka pindah pada directory `cd dumbflix-frontend`
+     ![gambar 46](assets/24pindahcd.png)
 
-        ![gambar 46](assets/24pindahcd.png)
+-   Pada directory dumbflix-frontend lakukan perintah `npm install`
 
-    -   Pada directory dumbflix-frontend lakukan perintah `npm install`
+     ![gambar 47](assets/25npminstall.png)
 
-        ![gambar 47](assets/25npminstall.png)
+-   lalu ketik perintah `npm start`
 
-    -   lalu ketik perintah `npm start`
+     ![gambar 48](assets/26npmstart.png)
 
-        ![gambar 48](assets/26npmstart.png)
+     ![gambar 49](assets/27npmstart.png)
 
-        ![gambar 49](assets/27npmstart.png)
+-   ketika sudah melakukan start maka masukan `3.223.87.14:3000` pada web broser
 
-    -   ketika sudah melakukan start maka masukan `3.223.87.14:3000` pada web broser
-
-        ![gambar 50](assets/28out.png)
+     ![gambar 50](assets/28out.png)
 
 ## Cabut Ip Public
 
-    -   Buka fitur `Elastic IPs` lalu pilih server yang akan dicabut ip publiknya, jika sudah terpilih klik `Actions` lalu pilih `Disassociate Elastic IP address`.
+-   Buka fitur `Elastic IPs` lalu pilih server yang akan dicabut ip publiknya, jika sudah terpilih klik `Actions` lalu pilih `Disassociate Elastic IP address`.
 
-        ![gambar 51](assets/1pilihip.png)
+     ![gambar 51](assets/1pilihip.png)
 
-        ![gambar 52](assets/2actionelastic.png)
+     ![gambar 52](assets/2actionelastic.png)
 
-    -   Selanjutnya klik `Disassociate`.
+-   Selanjutnya klik `Disassociate`.
 
-        ![gambar 53](assets/3disass.png)
+     ![gambar 53](assets/3disass.png)
 
-    -   Pada tabel **Security** lalu klik ID pada **Security groups**.
+-   Pada tabel **Security** lalu klik ID pada **Security groups**.
 
-        ![gambar 54](assets/4securitygroup.png)
+     ![gambar 54](assets/4securitygroup.png)
 
-    -   Selanjutnya klik `Edit inbound rules`.
+-   Selanjutnya klik `Edit inbound rules`.
 
-        ![gambar 55](assets/5editinbound.png)
+     ![gambar 55](assets/5editinbound.png)
 
-    -   Pada tabel **Edit inbound rules** lalu pada **Type** pilih `All traffic` pada Source pilih `Anywhere-IPv4`, kemudian klik `Save rules`.
+-   Pada tabel **Edit inbound rules** lalu pada **Type** pilih `All traffic` pada Source pilih `Anywhere-IPv4`, kemudian klik `Save rules`.
 
-        ![gambar 56](assets/6allanyip4.png)
+     ![gambar 56](assets/6allanyip4.png)
+        
+-   Selanjutnya cek **Instances** apakah masih terdapat Ip Public.
 
-    -   Selanjutnya cek **Instances** apakah masih terdapat Ip Public.
-
-        ![gambar 57](assets/7instancopy.png)
+     ![gambar 57](assets/7instancopy.png)
