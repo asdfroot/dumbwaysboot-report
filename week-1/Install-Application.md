@@ -46,7 +46,7 @@
 
 -   lalu ketik perintah `npm start`
 
-    ![gambar 10](assets/start.png)
+    ![gambar 10](assets/startnpm.png)
 
 -   ketika sudah melakukan start maka masukan `192.168.1.17:3000` pada web browser
 
