@@ -6,7 +6,7 @@
 
 -   Setelah masuk, kunjungi `My Profile` lalu `API Tokens`, pada tabel **API Keys** terdapat `Global API Key` dan klik `View`.
 
-    ![gambar 2](assets/3global.png)
+    ![gambar 2](assets/3globalapi.png)
 
 -   Jika muncul notifikasi **Your API Key** isi password dan Captha lalu `View`.
 
