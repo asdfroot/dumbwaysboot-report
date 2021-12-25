@@ -45,20 +45,38 @@
 -   Pada mysql bisa melakukan login tanpa sudo dan membuat user baru
 
     Login without sudo
-    ```
+    ```sh
     sudo mysql -uroot
+    ```
+    ```sh
     mysql > SELECT User, Host FROM mysql.user;
+    ```
+    ```sh
     mysql > DROP USER 'root'@'localhost';
+    ```
+    ```sh
     mysql > CREATE USER 'root'@'localhost' IDENTIFIED BY 'STRING-PASSWORD-NYA';
+    ```
+    ```sh
     mysql > GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
+    ```
+    ```sh
     mysql > FLUSH PRIVILEGES;
+    ```
+    ```sh
     mysql > exit
+    ```
+    ```sh
     mysql -uroot
     ```
     Create new user
-    ```
+    ```sh
     CREATE USER 'newuser'@'%' IDENTIFIED BY 'password';
+    ```
+    ```sh
     GRANT ALL PRIVILEGES ON *.* TO 'newuser'@'%';
+    ```
+    ```sh
     FLUSH PRIVILEGES;
     ```
 
