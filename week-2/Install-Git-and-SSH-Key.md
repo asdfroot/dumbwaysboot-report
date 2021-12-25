@@ -28,13 +28,12 @@
 
 -   Jika sudah terinstal lakukan Git config
 
-        ```sh
-        git config --global user.name "username"
-        ```
-        
-        ```sh
-        git config --global user.email "your-email"
-        ```
+    ```sh
+    git config --global user.name "username"
+    ```  
+    ```sh
+    git config --global user.email "your-email"
+    ```
         
     ![gambar 4](assets/44.png)
 
@@ -77,11 +76,12 @@
     ![gambar 10](assets/8buatfile.png)
 
 -   Coba melakukan commit
-
-        git add .
-
-        git commit -m "pesan"
-
+    ```sh
+    git add .
+    ```
+    ```sh
+    git commit -m "pesan"
+    ```
     ![gambar 11](assets/9gitcommit.png)
 
 -   Coba melalukan push
