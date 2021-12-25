@@ -14,31 +14,31 @@
 
 -   Setelah login lakukan update dan upgrade
 
-    >sudo apt-get update && sudo apt-get disk-upgrade
+        sudo apt-get update && sudo apt-get disk-upgrade
 
     ![gambar 3](assets/11dategradedatabase.png)
 
 -   Lalu instal mysql
 
-    >sudo apt install mysql-server
+        sudo apt install mysql-server
 
     ![gambar 4](assets/12installmysqlserver.png)
 
 -   Cek mysql
 
-    >sudo systemctl status mysql
+        sudo systemctl status mysql
 
     ![gambar 5](assets/13cekmysql.png)
 
 -   Setup keamanan mysql
 
-    >sudo mysql_secure_installation
+        sudo mysql_secure_installation
 
     ![gambar 6](assets/14sqlsecureinstallastion.png)
 
 -   Jika sudah, masuk ke mysql dengan user root
 
-    >sudo mysql -u root -p
+        sudo mysql -u root -p
 
     ![gambar 7](assets/15.png)
 
@@ -66,7 +66,7 @@
 
 -   Melihat database
 
-    >show databases;
+        show databases;
 
     ![gambar 9](assets/16showdatabases.png)
 
@@ -74,12 +74,12 @@
 
 -   Buka directory dan edit pada **blind-address** dan **mysql-blind-address**
 
-    >sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+        sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 
     ![gambar 10](assets/17nanomysqldcnf.png)
 
 -   Jika sudah lakukan restart pada mysql
 
-    >sudo systemctl restart mysql-service
+        sudo systemctl restart mysql-service
 
     ![gambar 11](assets/18restartmysql.png)
