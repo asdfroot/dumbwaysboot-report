@@ -16,7 +16,7 @@
 
 -   Masuk pada server yang telah dibuat, lalu lakukan update dan upgrade
 
-    >sudo apt update && sudo apt upgrade -y
+        sudo apt update && sudo apt upgrade -y
 
     ![gambar 2](assets/1update.png)
 
