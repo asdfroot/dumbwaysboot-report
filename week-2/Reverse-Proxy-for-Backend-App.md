@@ -21,11 +21,12 @@
 ## Create reverse proxy from application with port 5000 to port 80
 
 -   Setelah login lakukan update dan upgrade
-
-        cd /etc/nginx/
-
-        sudo mkdir dumbflix-backend
-
+    ```sh
+    cd /etc/nginx/
+    ```
+    ```sh
+    sudo mkdir dumbflix-backend
+    ```
     ![gambar 3](assets/3bikinfolder.png)
 
 -   Lalu buat file config buat backend
