@@ -11,14 +11,15 @@
     ![gambar 1](assets/7gitclone.png)
 
 -   Instal node.js 14.x
-
-        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
-        
-
-        nvm install 14
-        
-
-        nvm use 14
+    ```sh
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+    ``` 
+    ```sh    
+    nvm install 14
+    ```    
+    ```sh    
+    nvm use 14
+    ```
 
     ![gambar 2](assets/21curlnvm.png)
 
