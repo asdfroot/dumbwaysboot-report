@@ -6,9 +6,9 @@
 
 -   **Cari** Repository dari link tersebut
 
-  >https://github.com/sgnd/dumbflix-backend
+    >https://github.com/sgnd/dumbflix-backend
 
-  lalu klik `Fork`
+    lalu klik `Fork`
 
     ![gambar 1](assets/2fromfork.png)
 
