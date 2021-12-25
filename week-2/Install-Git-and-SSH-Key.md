@@ -28,7 +28,7 @@
 
 -   Jika sudah terinstal lakukan Git config
 
-        ```ss
+        ```sh
         git config --global user.name "username"
         ```
         
