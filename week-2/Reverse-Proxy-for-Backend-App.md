@@ -6,7 +6,7 @@
 
 -   Lakukan Update and upgrade system
 
-    >sudo apt update && sudo apt upgrade -y
+        sudo apt update && sudo apt upgrade -y
 
     ![gambar 1](assets/1updategrade.png)
 
@@ -14,7 +14,7 @@
 
 -   Instal web server
 
-    >sudo apt install nginx
+        sudo apt install nginx
 
     ![gambar 2](assets/2.png)
 
@@ -22,15 +22,15 @@
 
 -   Setelah login lakukan update dan upgrade
 
-    >cd /etc/nginx/
+        cd /etc/nginx/
 
-    >sudo mkdir dumbflix-backend
+        sudo mkdir dumbflix-backend
 
     ![gambar 3](assets/3bikinfolder.png)
 
 -   Lalu buat file config buat backend
 
-    >sudo nano api.syarif.onlinecamp.id
+        sudo nano api.syarif.onlinecamp.id
 
     ![gambar 4](assets/4buatfileconfig.png)
 
@@ -38,16 +38,16 @@
 
 -   sudo nano /etc/nginx/nginx.conf
 
-    >sudo nano /etc/nginx/nginx.conf
+        sudo nano /etc/nginx/nginx.conf
 
     kemudian tambahkan
 
-    >Include /etc/nginx/dumbflik-backend/*;
+        Include /etc/nginx/dumbflik-backend/*;
 
     ![gambar 6](assets/7isiinclude.png)
 
 -   Jika sudah,lakukan restart pada nginx
 
-    >sudo systemctl restart nginx
+        sudo systemctl restart nginx
 
     ![gambar 7](assets/8restart.png)
