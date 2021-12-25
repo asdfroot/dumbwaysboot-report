@@ -27,11 +27,12 @@
     ![gambar 3](assets/3gitversion.png)
 
 -   Jika sudah terinstal lakukan Git config
-
+        ```ss
         git config --global user.name "username"
-
+        ```
+        ```sh
         git config --global user.email "your-email"
-
+        ```
     ![gambar 4](assets/44.png)
 
 -   Lakukan generate ssh-KEY
