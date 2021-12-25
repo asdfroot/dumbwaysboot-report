@@ -6,7 +6,7 @@
 
 -   Lakukan konfigurasi SSL untuk subdomain `api.syarif.onlinecamp.id` menggunakan certbot
 
-    >sudo certbot certonly -d api.syarif.onlinecamp.id
+        sudo certbot certonly -d api.syarif.onlinecamp.id
 
     ![gambar 1](assets/7buatsertifikat.png)
 
@@ -14,19 +14,19 @@
 
 -   Lalu edit baris baseURL pada api.js diaplikasi frontend
 
-    >sudo nano dumbflix-frontend/src/config/api.js
+        sudo nano dumbflix-frontend/src/config/api.js
 
     ![gambar 1](assets/2isinanoapijs.png)
 
 -   Kemudian mulai ulang aplikasi
 
-    >pm2 restart all
+        pm2 restart all
 
     ![gambar 2](assets/3restart.png)
 
 -   Buka browser dan masukan URL backend apakah konfigurasi SSL berhasil
 
-    >api.syarif.onlinecamp.id
+        api.syarif.onlinecamp.id
 
     ![gambar 2](assets/10cannot.png)
 
