@@ -6,7 +6,7 @@
 
 -   **Cari** Repository dari link tersebut
 
-    >https://github.com/sgnd/dumbflix-backend
+        https://github.com/sgnd/dumbflix-backend
 
     lalu klik `Fork`
 
@@ -22,39 +22,39 @@
 
 -   Cek Git dan ssh apakah sudah terinstal
 
-    >git --version
+        git --version
 
     ![gambar 3](assets/3gitversion.png)
 
 -   Jika sudah terinstal lakukan Git config
 
-    >git config --global user.name "username"
+        git config --global user.name "username"
 
-    >git config --global user.email "your-email"
+        git config --global user.email "your-email"
 
     ![gambar 4](assets/44.png)
 
 -   Lakukan generate ssh-KEY
 
-    >ssh-keygen -t rsa -b 4096
+        ssh-keygen -t rsa -b 4096
 
     ![gambar 5](assets/4sshkey.png)
 
 -   Buka **id_rsa.pub** lalu copy
 
-    >cat .ssh/id_rsa.pub
+        cat .ssh/id_rsa.pub
 
     ![gambar 6](assets/45bukarsa.png)
 
 -   Buka akun github dan pastekan **id_rsa.pub** yang sudah di copy
 
-    >https://github.com/settings/ssh/new
+        https://github.com/settings/ssh/new
 
     ![gambar 7](assets/5pastekey.png)
 
 -   Selanjutnya autentikasi SSH ke github
 
-    >ssh -T git@github.com
+        ssh -T git@github.com
 
     ![gambar 8](assets/6ssh-T.png)
 
@@ -62,33 +62,33 @@
 
 -   Clone Repository
 
-    >git clone git@github.com:asdfroot/dumbflix-backend.git
+        git clone git@github.com:asdfroot/dumbflix-backend.git
 
     ![gambar 9](assets/7gitclone.png)
 
 -   Coba Membuat file baru pada directory github hasil clone
 
-    >cat > init.txt
+        cat > init.txt
 
     ![gambar 10](assets/8buatfile.png)
 
 -   Coba melakukan commit
 
-    >git add .
+        git add .
 
-    >git commit -m "pesan"
+        git commit -m "pesan"
 
     ![gambar 11](assets/9gitcommit.png)
 
 -   Coba melalukan push
 
-    >git push git@github.com:asdfroot/dumbflix-backend.git
+        git push git@github.com:asdfroot/dumbflix-backend.git
 
     ![gambar 12](assets/10push.png)
 
 -   Coba melalukan push
 
-    >git pull git@github.com:asdfroot/dumbflix-backend.git
+        git pull git@github.com:asdfroot/dumbflix-backend.git
 
     ![gambar 13](assets/11.png)
 
