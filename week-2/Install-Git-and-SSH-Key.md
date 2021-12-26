@@ -71,9 +71,21 @@
 
 -   Coba Membuat file baru pada directory github hasil clone
 
-        cat > init.txt
+        cat > ini.txt
 
-    ![gambar 10](assets/8buatfile.png)
+    ![gambar 10](assets/buat-file.png)
+
+-   Membuat branch
+    ```sh
+    git branch development
+    ```
+    ![gambar 10](assets/001branch.png)
+
+-   Pindah branch development
+    ```sh
+    git checkout development
+    ```
+    ![gambar 10](assets/002branch.png)
 
 -   Coba melakukan commit
     ```sh
@@ -88,13 +100,19 @@
 
         git push git@github.com:asdfroot/dumbflix-backend.git
 
-    ![gambar 12](assets/10push.png)
+    ![gambar 12](assets/003.png)
 
--   Coba melalukan push
+-   Coba melalukan pull
 
         git pull git@github.com:asdfroot/dumbflix-backend.git
 
-    ![gambar 13](assets/11.png)
+    ![gambar 13](assets/004.png)
+    
+-   Menyatukan percabangan pada branch
+    ```sh
+    git merge master development
+    ```
+    ![gambar 13](assets/005.png)    
 
 -   Cek perubahan pada Repository
 
