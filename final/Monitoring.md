@@ -147,4 +147,3 @@
 
     ![gambar](assets/27.png)
 
-## Reverse Proxy, Domain, SSL
