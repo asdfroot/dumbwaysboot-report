@@ -114,19 +114,19 @@
 -   Siapkan konfigurasi untuk jenkins dan Buat folder `docker-jenkins` berisi file `docker-compose.yml`
     ```sh
     version: '3.9'
-services:
-  jenkins:
-    image: jenkins/jenkins:lts-jdk11
-    ports:
-      - 8080:8080
-      - 50000:50000
-    privileged: true
-    user: root
-    container_name: jenkins
-    volumes:
-      - ~/jenkins:/var/jenkins_home
-      - /var/run/docker.sock:/var/run/docker.sock
-      - /usr/local/bin/docker:/usr/local/bin/docker   
+    services:
+      jenkins:
+        image: jenkins/jenkins:lts-jdk11
+        ports:
+          - 8080:8080
+          - 50000:50000
+        privileged: true
+        user: root
+        container_name: jenkins
+        volumes:
+          - ~/jenkins:/var/jenkins_home
+          - /var/run/docker.sock:/var/run/docker.sock
+          - /usr/local/bin/docker:/usr/local/bin/docker   
     ```
 -   Lalu buat file yml untuk setup jenkinsnya `setup-jenkins.yml`
     ```sh
